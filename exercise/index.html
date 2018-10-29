@@ -29,6 +29,14 @@
                      </thead>
                 </table>
            </div>
+
+           <div id="chart"></div>
+           <h1 id="chart">This text will not be visible</h1>
+
+<div id="offer-need" data-source="<%= @statistics.data_offer_need %>"></div>
+
+
+
       </body>
  </html>
  <script>
@@ -44,8 +52,7 @@
  });
 
 
-<div id="chart"></div>
-<h1 id="chart">This text will not be visible</h1>
+
 
 
 var chart = c3.generate({
@@ -118,7 +125,7 @@ var chart = c3.generate({
 });
 
 
-<div id="offer-need" data-source="<%= @statistics.data_offer_need %>"></div>
+
 
 
 var dataSource = $("#chart-offer-need").attr("data-source");
