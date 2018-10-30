@@ -19,11 +19,11 @@ $("button#airtable").click(function() {
 
 $(document).ready(function(){
 $(".col-lg-4 col-sm-6").click(function() {
-    $(".airtable-embed").slideToggle(300);
+    $(".airtable-embed-5").slideToggle(300);
 
 });
 
-""
+
 
 
 
