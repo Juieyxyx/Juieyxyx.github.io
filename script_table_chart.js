@@ -84,6 +84,12 @@ $(document).ready(function(){
                          columns: table2_dataSet,
                          type : 'bar'
                      },
+
+                     axis: {
+                                            x: {label: 'Price Range'},
+                                            y: {label: 'Total Restaurants'}
+                                          },
+
                      bar: {
                          title: "Best rated Restaurants in each price range:",
                      }
