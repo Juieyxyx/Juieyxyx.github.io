@@ -205,6 +205,14 @@
       var items = [];
       var airtable_read_endpoint = "https://api.airtable.com/v0/appmq0Ec3FFKpn5pM/location_catogory?api_key=keyIvnCG4lnYkaCAs&view=Grid%20view"
 
+
+      // create custom icon
+          var Icon = L.icon({
+              iconUrl: 'https://dl.airtable.com/DAJdd6KCSAmLwxhWbvjK_1b39544ad97591f4acd3ff8694ef5982.png',
+              iconSize: [40, 40], // size of the icon
+              popupAnchor: [0,-15]
+              });
+
       var data = [];
       $.getJSON(airtable_read_endpoint, function(result) {
              $.each(result.records, function(key,value) {
@@ -224,7 +232,7 @@
   function show_districts(){
     for (var i in data) {
         var latlng = L.latLng({ lat: data[i].latitude, lng: data[i].longitude });
-        L.marker( latlng )
+        L.marker( latlng, {icon: Icon})
             .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].location + '</a>' )
             .addTo(map);
     }
