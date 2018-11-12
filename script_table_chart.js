@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-
-
      $("button#roll_up").click(function() {
        var table1_items = [];
        var i = 0;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC>
 <html lang="en">
 
   <head>
@@ -10,6 +10,28 @@
 
     <title>Eat in Hong Kong</title>
 
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+
+
+
+
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,8 +40,6 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/creative.min.css" rel="stylesheet">
@@ -27,117 +47,182 @@
 
     <!-- Script to make table and chart work (?)-->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css"
-    <script src='scriptlib.js'></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <link href="//cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
+      <script src='scriptlib.js'></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.1.29/c3.css" rel="stylesheet" type="text/css">
 
 
-  <!-- Script to toggle the airtable -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-
-$(document).ready(function(){
-$("button#airtable").click(function() {
-    $(".airtable-embed").slideToggle(300);
-});
-});
-
-</script>
+<!-- head for map -->
 
 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.4/leaflet.js"></script>
+      <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+
+      <!-- Script to toggle the airtable -->
+
+    <script>
+    $(document).ready(function(){
+    $("button#airtable").click(function() {
+        $(".airtable-embed").slideToggle(300);
+    });
+    });
+
+    </script>
 
   </head>
+<!-- head部分完全兼容 -->
 
+<body id="page-top">
 
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Eat in Hong Kong</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
 
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Eat in Hong Kong</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-
-            <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#recommendation">Recommendation</a>
+          <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#recommendation">Recommendation</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Data Visualization</a>
           </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Data Visualization</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Food Type</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Food Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Food Type</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-<!-- First Page -->
-    <header class="masthead text-center text-white d-flex">
-      <div class="container my-auto">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
-            <h1 class="text-uppercase">
-              <strong>Find the food you like</strong>
-            </h1>
-    <br>
-          </div>
-          <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5">Start your food journey in Hong Hong</p>
-            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#recommendation">Explore</a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-
-    <!-- Second Page -->
-    <!-- embed airtable -->
-      <section class="bg-primary" id="recommendation">
-        <div class="container">
+  <!-- First Page -->
+      <header class="masthead text-center text-white d-flex">
+        <div class="container my-auto">
           <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-              <h2 class="section-heading text-white">See What's Hot</h2>
-
-              <p class="text-faded mb-4">Here are 30 best rated restaurants of this month in Hong Kong. Data are extracted from Openrice.com. Click and see what others like now!  </p>
-              <button type="button" style="font-size:20px; height:70px; width:150px"
-              class="btn btn-light" id="airtable">See data!</button>
+            <div class="col-lg-10 mx-auto">
+              <h1 class="text-uppercase">
+                <strong>Find the food you like</strong>
+              </h1>
+      <br>
+            </div>
+            <div class="col-lg-8 mx-auto">
+              <p class="text-faded mb-5">Start your food journey in Hong Hong</p>
+              <a class="btn btn-primary btn-xl js-scroll-trigger" href="#recommendation">Explore</a>
             </div>
           </div>
         </div>
-          </section>
-
-        <iframe class="airtable-embed" style="display:none"
-        src="https://airtable.com/embed/shrvIM2YnE9Sk62XZ?backgroundColor=red&viewControls=on"
-        frameborder="0" onmousewheel="" width="100%" height="650"
-        style="background: transparent; border: 1px solid #ccc;"></iframe>
+      </header>
 
 
+      <!-- Second Page -->
+      <!-- embed airtable -->
+        <section class="bg-primary" id="recommendation">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto text-center">
+                <h2 class="section-heading text-white">See What's Hot</h2>
 
-  <!-- Third page -->
-     <!-- charts and tables -->
+                <p class="text-faded mb-4">Here are 30 best rated restaurants of this month in Hong Kong. Data are extracted from Openrice.com. Click and see what others like now!  </p>
+                <button type="button" style="font-size:20px; height:70px; width:150px"
+                class="btn btn-light" id="airtable">See data!</button>
+              </div>
+            </div>
+          </div>
+            </section>
+
+          <iframe class="airtable-embed" style="display:none"
+          src="https://airtable.com/embed/shrvIM2YnE9Sk62XZ?backgroundColor=red&viewControls=on"
+          frameborder="0" onmousewheel="" width="100%" height="650"
+          style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+
+
   <section id="services">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 text-center">
-              <h2 class="section-heading">Data Visualization: Tables and Charts</h2>
-                <p class="text-faded mb-4">Find more information about the above popular restaurants, especially about their price range!  </p>
-              <a href="visualization.html" > <button type="button" style="font-size:20px; height:70px; width:150px"
-                class="btn btn-primary" >Find data!</button> </a>
-</section>
+    <div class="container">
+      <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Data Visualization: Tables and Charts</h2>
+          <p class="text-faded mb-4">Find more information about the above popular restaurants, especially about their price range!  </p>
+<button type="button" style="font-size:20px; height:70px; width:200px"
+          class="btn btn-primary" id='roll_up'>Visualize data!</button><br>
+
+<!-- try to integrate charts and tables here -->
+<div class="table-responsive">
+<table id="table1" width="100%" class="table table-bordered"></table>
+<table id="table2" width="100%" class="table table-bordered"></table>
+
+<div id="chart"></div>
+</div>
+
+
+<script src='script_table_chart.js'></script>
+
+
+<!-- for chart to display -->
+<script type="text/javascript" src="c3.min.js"></script>
+<script type="text/javascript" src="d3.min.js"></script>
+
+
 
 
 <!-- Fourth Page -->
+<section class="bg-primary" id="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h4 class="section-heading text-white">Target a place to explore food!</h4>
+        <div id="map" style="width: 800px; height: 440px; position: relative; left: -17px; border: 1px solid #AAA;"></div>
+        <br><button type="button" class="btn btn-light"  id='roll_up_map' onclick="show_districts();">Show Districts</button><br>
+</div>
+    </div>
+  </div>
+  <script>
+      var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
+      var map = L.map('map')
+            .addLayer(mapboxTiles)
+            .setView([22.280556, 114.165278], 13);
+      var items = [];
+      var airtable_read_endpoint = "https://api.airtable.com/v0/appmq0Ec3FFKpn5pM/location_catogory?api_key=keyIvnCG4lnYkaCAs&view=Grid%20view"
 
-    <section class="p-0" id="portfolio">
+      var data = [];
+      $.getJSON(airtable_read_endpoint, function(result) {
+             $.each(result.records, function(key,value) {
+                 items = {};
+                     items["location"] = value.fields.location;
+                     items["url"] = value.fields.url;
+                     items["image_url"] = value.fields.image_url;
+                     items["latitude"] = value.fields.latitude;
+                     items["longitude"] = value.fields.longitude;
+                     data.push(items);
+                     console.log(items);
+              }); // end .each
+      }); // end getJSON
+  </script>
+
+  <script>
+  function show_districts(){
+    for (var i in data) {
+        var latlng = L.latLng({ lat: data[i].latitude, lng: data[i].longitude });
+        L.marker( latlng )
+            .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].location + '</a>' )
+            .addTo(map);
+    }
+  }
+  </script>
+</section>
+
+
+<!-- Fifth Page -->
+
+    <section class="p-0" id="contact">
       <div class="container-fluid p-0">
         <div class="row no-gutters popup-gallery">
           <div class="col-lg-4 col-sm-6">
@@ -244,41 +329,13 @@ $("button#airtable").click(function() {
 
 
 
-    <section id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
-            <p class="mb-5"> Contact me!</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 ml-auto text-center">
-            <i class="fas fa-phone fa-3x mb-3 sr-contact-1"></i>
-            <p>53460144</p>
-          </div>
-          <div class="col-lg-4 mr-auto text-center">
-            <i class="fas fa-envelope fa-3x mb-3 sr-contact-2"></i>
-            <p>
-              <a href="1155119631@link.cuhk.edu.hk">1155119631@link.cuhk.edu.hk</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/creative.min.js"></script>
 
-  </body>
 
+
+
+
+</body>
 </html>
