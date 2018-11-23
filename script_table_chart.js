@@ -99,3 +99,42 @@ $(document).ready(function(){
         // $.getJSON('http://localhost/d756a/data_export.json/Computer+TV', function(obj) {
 
 }); // document ready
+
+
+
+
+
+$(document).ready(function(){
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+$('#airtable').on('click',function(){
+    $('#bounce1').animateCss('bounce');
+
+});
+});
+
+
+
+
+
+
+$(document).ready(function(){
+$.fn.extend({
+    animateCss: function (animationName) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        $(this).addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+        });
+    }
+});
+$('#roll_up').on('click',function(){
+    $('#bounce2').animateCss('bounce');
+
+});
+});
