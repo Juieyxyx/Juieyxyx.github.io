@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>食趣 - 有現場音樂的餐廳</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+      <script src="jquery.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+
+
+    <!-- Script to toggle the airtable -->
+<script>
+$(document).ready(function(){
+$("button#couplebtn").click(function() {
+    $("#highcharts-b624ef4d-e2a6-4ed1-8102-cc9b82646f98").slideToggle(300);
+    $("#highcharts-985c17d8-3674-4fe4-a442-80ff58a34114").slideToggle(300);
+});
+});
+</script>
+
+  </head>
+
+
+  <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" style="color:rgba(0, 0, 0, 0.5) ">食趣</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" style="color:#000" class="nav-link">主頁</a></li>
+              <li class="nav-item"><a href="index.html#section-offer" style="color:#000" class="nav-link"> 食趣精選</a></li>
+                <li class="nav-item"><a href="index.html#section-menu" style="color:#f05f40" class="nav-link">個性推薦</a></li>
+            <li class="nav-item"><a href="index.html#section-about" style="color:#000" class="nav-link">美食地圖</a></li>
+
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+                <!-- END nav -->
+
+
+
+
+
+
+    <section class="site-section" id="section-menu">
+        <div style="text-align:center;margin-bottom: 27px;">
+          <h2 >有現場音樂的餐廳</h2>
+          <div style="text-align:center;padding:10px;" > <button type="button"  class="btn btn-primary " id="couplebtn" >  對比餐廳</button> </div>
+        </div>
+
+        <!-- charts -->
+
+
+
+
+
+      <div id="highcharts-b624ef4d-e2a6-4ed1-8102-cc9b82646f98" style="display:none"></div><script>
+      (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"color":"#f48fb1","type":"spline"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"type":"spline","color":"#1e88e5"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"type":"spline","color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"CHEF STAGE de Eddy Chu\";669;20;19\n\"彌敦左岸 Nathan Left\";442;14;2\n\"米走雞Live Running Chicken Live\";195;11;10\n\"雅苑座 The Greenery\";522;127;80\n\"小曼谷海鮮燒烤屋 Mini Bangkok Seafood and Grill\";235;35;15\n\"The Live House\";225;61;44\n\"Spark Bar & Restaurant\";187;13;4\n\"Home Bar & Restaurant\";238;13;6\n\"Ember\";223;1;1\n\"大公館 Greater China Club\";155;16;2","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"text":"","href":""}};/*
+
+      */new Highcharts.Chart("highcharts-b624ef4d-e2a6-4ed1-8102-cc9b82646f98", options);}}})();
+      </script>
+
+
+
+
+
+
+
+    <div id="highcharts-985c17d8-3674-4fe4-a442-80ff58a34114" style="display:none"></div><script>
+    (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"color":"#f48fb1","type":"column"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"CHEF STAGE de Eddy Chu\";33079\n\"彌敦左岸 Nathan Left\";12380\n\"米走雞Live Running Chicken Live\";9433\n\"雅苑座 The Greenery\";41357\n\"小曼谷海鮮燒烤屋 Mini Bangkok Seafood and Grill\";9943\n\"The Live House\";29725\n\"Spark Bar & Restaurant\";9104\n\"Home Bar & Restaurant\";6959\n\"Ember\";1770\n\"大公館 Greater China Club\";8672","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"text":"","href":""}};/*
+
+    */new Highcharts.Chart("highcharts-985c17d8-3674-4fe4-a442-80ff58a34114", options);}}})();
+    </script>
+
+
+
+
+
+
+
+
+
+          <div  >
+<iframe class="airtable-embed" src="https://airtable.com/embed/shrbekE5gy2NHHwNz?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+              </body>
+              </html>
