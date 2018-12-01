@@ -30,8 +30,8 @@
 <script>
 $(document).ready(function(){
 $("button#couplebtn").click(function() {
-    $("#highcharts-abe64d44-b598-4e78-9d00-d7223d61e529").slideToggle(300);
-    $("#highcharts-10d932cf-0bfb-4ce6-b11e-097197032264").slideToggle(300);
+    $("#highcharts-2dc34291-82b0-42c5-9f2d-97aade9f1c59").slideToggle(300);
+    $("#highcharts-65464aaa-2b20-497e-8cde-eb704d4402d8").slideToggle(300);
 });
 });
 </script>
@@ -41,24 +41,22 @@ $("button#couplebtn").click(function() {
 
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light scrolled awake" id="site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html" style="color:rgba(0, 0, 0, 0.5) ">食趣</a>
+        <a class="navbar-brand" href="index.html">食趣</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
+          <span class="oi oi-menu"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" style="color:#000" class="nav-link">主頁</a></li>
-              <li class="nav-item"><a href="index.html#section-offer" style="color:#000" class="nav-link"> 食趣精選</a></li>
-                <li class="nav-item"><a href="index.html#section-menu" style="color:#f05f40" class="nav-link">個性推薦</a></li>
-            <li class="nav-item"><a href="index.html#section-about" style="color:#000" class="nav-link">美食地圖</a></li>
-
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
+            <li class="nav-item active"><a href="index.html" class="nav-link">主頁</a></li>
+              <li class="nav-item"><a href="index.html#section-offer" class="nav-link"> 食趣精選</a></li>
+                <li class="nav-item"><a href="index.html#section-menu" class="nav-link active"><< 個性推薦</a></li>
+            <li class="nav-item"><a href="index.html#section-about" class="nav-link">美食地圖</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
                 <!-- END nav -->
 
 
@@ -84,55 +82,56 @@ $("button#couplebtn").click(function() {
         <!-- 對比評分和好評 -->
 
 
-        <div id="highcharts-abe64d44-b598-4e78-9d00-d7223d61e529" style="display:none"></div><script>
-        (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"color":"#f06292"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"color":"#0277bd"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"CHEF STAGE de Eddy Chu\";669;20;19\n\"Sky726\";402;35;39\n\"Goobne Chicken\";428;77;17\n\"六公館 HEXA\";204;17;16\n\"Bistronomique\";212;8;4\n\"Promenade 西餐廳 Promenade Restaurant\";247;80;57\n\"吞POT 雞煲火鍋.住家菜 Lazy Pot\";150;3;1\n\"AVA Restaurant Slash Bar\";148;48;18\n\"Harlan's\";154;60;30\n\"Mango Tree\";144;53;16\n\"Morton's of Chicago\";134;25;4\n\"泰道 Thai Dao\";95;6;1\n\"港畔餐廳 Harbourside\";230;77;52\n\"Ambrosia Oyster Bar & Grill\";136;22;17","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false}};/*
-        // Sample of extending options:
-        Highcharts.merge(true, options, {
-            chart: {
-                backgroundColor: "#bada55"
-            },
-            plotOptions: {
-                series: {
-                    cursor: "pointer",
-                    events: {
-                        click: function(event) {
-                            alert(this.name + " clicked\n" +
-                                  "Alt: " + event.altKey + "\n" +
-                                  "Control: " + event.ctrlKey + "\n" +
-                                  "Shift: " + event.shiftKey + "\n");
-                        }
-                    }
+
+<div id="highcharts-2dc34291-82b0-42c5-9f2d-97aade9f1c59" style="display:none"></div><script>
+(function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"spline","color":"#f48fb1"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"type":"spline","color":"#1e88e5"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"type":"spline","color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"CHEF STAGE de Eddy Chu\";669;20;19\n\"Sky726\";402;35;39\n\"Goobne Chicken\";428;77;17\n\"六公館 HEXA\";204;17;16\n\"Bistronomique\";212;8;4\n\"Promenade 西餐廳 Promenade Restaurant\";247;80;57\n\"吞POT 雞煲火鍋.住家菜 Lazy Pot\";150;3;1\n\"AVA Restaurant Slash Bar\";148;48;18\n\"Harlan's\";154;60;30\n\"Mango Tree\";144;53;16\n\"Morton's of Chicago\";134;25;4\n\"泰道 Thai Dao\";95;6;1\n\"港畔餐廳 Harbourside\";230;77;52\n\"Ambrosia Oyster Bar & Grill\";136;22;17","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"enabled":false}};/*
+// Sample of extending options:
+Highcharts.merge(true, options, {
+    chart: {
+        backgroundColor: "#bada55"
+    },
+    plotOptions: {
+        series: {
+            cursor: "pointer",
+            events: {
+                click: function(event) {
+                    alert(this.name + " clicked\n" +
+                          "Alt: " + event.altKey + "\n" +
+                          "Control: " + event.ctrlKey + "\n" +
+                          "Shift: " + event.shiftKey + "\n");
                 }
             }
-        });
-        */new Highcharts.Chart("highcharts-abe64d44-b598-4e78-9d00-d7223d61e529", options);}}})();
-        </script>
+        }
+    }
+});
+*/new Highcharts.Chart("highcharts-2dc34291-82b0-42c5-9f2d-97aade9f1c59", options);}}})();
+</script>
 
 
-        <div id="highcharts-10d932cf-0bfb-4ce6-b11e-097197032264" style="display:none;margin-top:20px;"></div><script>
-        (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"column","color":"#f48fb1"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"CHEF STAGE de Eddy Chu\";33077\n\"Sky726\";40780\n\"Goobne Chicken\";36041\n\"六公館 HEXA\";18979\n\"Bistronomique\";10621\n\"Promenade 西餐廳 Promenade Restaurant\";36173\n\"吞POT 雞煲火鍋.住家菜 Lazy Pot\";4242\n\"AVA Restaurant Slash Bar\";19542\n\"Harlan's\";31233\n\"Mango Tree\";14824\n\"Morton's of Chicago\";16235\n\"泰道 Thai Dao\";4449\n\"港畔餐廳 Harbourside\";11046\n\"Ambrosia Oyster Bar & Grill\";15641","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false}};/*
-        // Sample of extending options:
-        Highcharts.merge(true, options, {
-            chart: {
-                backgroundColor: "#bada55"
-            },
-            plotOptions: {
-                series: {
-                    cursor: "pointer",
-                    events: {
-                        click: function(event) {
-                            alert(this.name + " clicked\n" +
-                                  "Alt: " + event.altKey + "\n" +
-                                  "Control: " + event.ctrlKey + "\n" +
-                                  "Shift: " + event.shiftKey + "\n");
-                        }
-                    }
+
+<div id="highcharts-65464aaa-2b20-497e-8cde-eb704d4402d8" style="display:none"></div><script>
+(function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"column","color":"#f48fb1"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"CHEF STAGE de Eddy Chu\";33077\n\"Sky726\";40780\n\"Goobne Chicken\";36041\n\"六公館 HEXA\";18979\n\"Bistronomique\";10621\n\"Promenade 西餐廳 Promenade Restaurant\";36173\n\"吞POT 雞煲火鍋.住家菜 Lazy Pot\";4242\n\"AVA Restaurant Slash Bar\";19542\n\"Harlan's\";31233\n\"Mango Tree\";14824\n\"Morton's of Chicago\";16235\n\"泰道 Thai Dao\";4449\n\"港畔餐廳 Harbourside\";11046\n\"Ambrosia Oyster Bar & Grill\";15641","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"text":"","enabled":false}};/*
+// Sample of extending options:
+Highcharts.merge(true, options, {
+    chart: {
+        backgroundColor: "#bada55"
+    },
+    plotOptions: {
+        series: {
+            cursor: "pointer",
+            events: {
+                click: function(event) {
+                    alert(this.name + " clicked\n" +
+                          "Alt: " + event.altKey + "\n" +
+                          "Control: " + event.ctrlKey + "\n" +
+                          "Shift: " + event.shiftKey + "\n");
                 }
             }
-        });
-        */new Highcharts.Chart("highcharts-10d932cf-0bfb-4ce6-b11e-097197032264", options);}}})();
-        </script>
-
+        }
+    }
+});
+*/new Highcharts.Chart("highcharts-65464aaa-2b20-497e-8cde-eb704d4402d8", options);}}})();
+</script>
 
 
 

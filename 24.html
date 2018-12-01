@@ -41,24 +41,22 @@ $("button#couplebtn").click(function() {
 
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light scrolled awake" id="site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html" style="color:rgba(0, 0, 0, 0.5) ">食趣</a>
+        <a class="navbar-brand" href="index.html">食趣</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
-
+          <span class="oi oi-menu"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" style="color:#000" class="nav-link">主頁</a></li>
-              <li class="nav-item"><a href="index.html#section-offer" style="color:#000" class="nav-link"> 食趣精選</a></li>
-                <li class="nav-item"><a href="index.html#section-menu" style="color:#f05f40" class="nav-link">個性推薦</a></li>
-            <li class="nav-item"><a href="index.html#section-about" style="color:#000" class="nav-link">美食地圖</a></li>
-
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
+            <li class="nav-item active"><a href="index.html" class="nav-link">主頁</a></li>
+              <li class="nav-item"><a href="index.html#section-offer" class="nav-link"> 食趣精選</a></li>
+                <li class="nav-item"><a href="index.html#section-menu" class="nav-link active"><< 個性推薦</a></li>
+            <li class="nav-item"><a href="index.html#section-about" class="nav-link">美食地圖</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
                 <!-- END nav -->
 
 
@@ -76,11 +74,7 @@ $("button#couplebtn").click(function() {
 
 
 
-      <div id="highcharts-c70e06a1-5f1d-4107-a108-087b8932bd84" style="display:none;"></div><script>
-      (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"color":"#f48fb1","type":"column"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"天然豚骨拉麵專門店一蘭 ICHIRAN\";28598\n\"新香園 (堅記)\";23037\n\"紅橋 Rosa Bridge Restaurant\";2249\n\"十八座狗仔粉\";8346\n\"The Flying Pan\";2264\n\"蘇記(茶檔)\";3711\n\"德豐打冷粉麵餐廳\";606\n\"金利來小廚\";1277\n\"上海香港麵家 Shanghai Hong Kong Noodle Shop\";1937\n\"翠華餐廳Tsui Wah Restaurant\";5490\n\"德發粥品專家\";1236\n\"標叔叔小食店\";677","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"text":"","href":""}};/*
 
-      */new Highcharts.Chart("highcharts-c70e06a1-5f1d-4107-a108-087b8932bd84", options);}}})();
-      </script>
 
 
 
@@ -91,7 +85,11 @@ $("button#couplebtn").click(function() {
       </script>
 
 
+      <div id="highcharts-c70e06a1-5f1d-4107-a108-087b8932bd84" style="display:none;"></div><script>
+      (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"color":"#f48fb1","type":"column"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"天然豚骨拉麵專門店一蘭 ICHIRAN\";28598\n\"新香園 (堅記)\";23037\n\"紅橋 Rosa Bridge Restaurant\";2249\n\"十八座狗仔粉\";8346\n\"The Flying Pan\";2264\n\"蘇記(茶檔)\";3711\n\"德豐打冷粉麵餐廳\";606\n\"金利來小廚\";1277\n\"上海香港麵家 Shanghai Hong Kong Noodle Shop\";1937\n\"翠華餐廳Tsui Wah Restaurant\";5490\n\"德發粥品專家\";1236\n\"標叔叔小食店\";677","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"text":"","href":""}};/*
 
+      */new Highcharts.Chart("highcharts-c70e06a1-5f1d-4107-a108-087b8932bd84", options);}}})();
+      </script>
 
 
 

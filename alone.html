@@ -30,8 +30,8 @@
 <script>
 $(document).ready(function(){
 $("button#couplebtn").click(function() {
-    $("#highcharts-f214ffa2-fd4e-4bd4-810e-9af00b3b7947").slideToggle(300);
-    $("#highcharts-112d683c-c7ab-4452-972d-6c805708dcb4").slideToggle(300);
+    $("#highcharts-ec3e005b-700d-413c-8408-bcd3e327d04f").slideToggle(300);
+    $("#highcharts-56e5cafd-f5c4-4b94-a0d8-e7f76fe67d8f").slideToggle(300);
 });
 });
 </script>
@@ -41,24 +41,22 @@ $("button#couplebtn").click(function() {
 
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light scrolled awake" id="site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html" style="color:rgba(0, 0, 0, 0.5) ">食趣</a>
+        <a class="navbar-brand" href="index.html">食趣</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="oi oi-menu"></span> Menu
+          <span class="oi oi-menu"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" style="color:#000" class="nav-link">主頁</a></li>
-              <li class="nav-item"><a href="index.html#section-offer" style="color:#000" class="nav-link"> 食趣精選</a></li>
-                <li class="nav-item"><a href="index.html#section-menu" style="color:#f05f40" class="nav-link">個性推薦</a></li>
-            <li class="nav-item"><a href="index.html#section-about" style="color:#000" class="nav-link">美食地圖</a></li>
-
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
+            <li class="nav-item active"><a href="index.html" class="nav-link">主頁</a></li>
+              <li class="nav-item"><a href="index.html#section-offer" class="nav-link"> 食趣精選</a></li>
+                <li class="nav-item"><a href="index.html#section-menu" class="nav-link active"><< 個性推薦</a></li>
+            <li class="nav-item"><a href="index.html#section-about" class="nav-link">美食地圖</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
                 <!-- END nav -->
 
 
@@ -84,19 +82,59 @@ $("button#couplebtn").click(function() {
         <!-- 對比評分和好評 -->
 
 
-        <div id="highcharts-f214ffa2-fd4e-4bd4-810e-9af00b3b7947" style="display:none"></div><script>
-        (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"spline","color":"#f48fb1"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"type":"spline","color":"#0277bd"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"type":"spline","color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"Nichi Nichi 日子咖啡\";6;1;0\n\"西湖小立吞\";8;0;0\n\"浪浪別哭\";2;1;0\n\"成家小館\";1;0;0\n\"小房子\";74;39;2\n\"阿來泰式地道風味\";418;24;20\n\"農米莊\";106;35;24\n\"富記粥品\";166;51;19\n\"西門町台灣麵食\";400;166;53","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"chart":{},"credits":{"href":"","text":""}};/*
-
-        */new Highcharts.Chart("highcharts-f214ffa2-fd4e-4bd4-810e-9af00b3b7947", options);}}})();
+        <div id="highcharts-ec3e005b-700d-413c-8408-bcd3e327d04f" style="display:none"></div><script>
+        (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"spline","color":"#f48fb1"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"type":"spline","color":"#1e88e5"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"type":"spline","color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"小房子\";74;39;2\n\"阿來泰式地道風味\";418;24;20\n\"農米莊\";106;35;24\n\"富記粥品\";166;51;19\n\"西門町台灣麵食\";400;166;53\n\"宜家家居美食站\";171;50;4\n\"武士拉麵\";272;49;10\n\"樓下冰室\";292;61;8\n\"滿粥\";20;4;0\n\"星座冰室\";286;147;56","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"enabled":false}};/*
+        // Sample of extending options:
+        Highcharts.merge(true, options, {
+            chart: {
+                backgroundColor: "#bada55"
+            },
+            plotOptions: {
+                series: {
+                    cursor: "pointer",
+                    events: {
+                        click: function(event) {
+                            alert(this.name + " clicked\n" +
+                                  "Alt: " + event.altKey + "\n" +
+                                  "Control: " + event.ctrlKey + "\n" +
+                                  "Shift: " + event.shiftKey + "\n");
+                        }
+                    }
+                }
+            }
+        });
+        */new Highcharts.Chart("highcharts-ec3e005b-700d-413c-8408-bcd3e327d04f", options);}}})();
         </script>
 
 
 
 
-        <div id="highcharts-112d683c-c7ab-4452-972d-6c805708dcb4" style="display:none"></div><script>
-        (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"spline","color":"#f48fb1"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"Nichi Nichi 日子咖啡\";60\n\"西湖小立吞\";190\n\"浪浪別哭\";148\n\"成家小館\";41\n\"小房子\";18695\n\"阿來泰式地道風味\";15952\n\"農米莊\";6121\n\"富記粥品\";9025\n\"西門町台灣麵食\";10241","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"chart":{},"credits":{"href":"","text":""}};/*
-        */new Highcharts.Chart("highcharts-112d683c-c7ab-4452-972d-6c805708dcb4", options);}}})();
-        </script>
+
+<div id="highcharts-56e5cafd-f5c4-4b94-a0d8-e7f76fe67d8f" style="display:none"></div><script>
+(function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"column","color":"#f48fb1"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"小房子\";18695\n\"阿來泰式地道風味\";15952\n\"農米莊\";6121\n\"富記粥品\";9025\n\"西門町台灣麵食\";10241\n\"宜家家居美食站\";1130\n\"武士拉麵\";11050\n\"樓下冰室\";8346\n\"滿粥\";1007\n\"星座冰室\";14537","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"text":"","enabled":false}};/*
+// Sample of extending options:
+Highcharts.merge(true, options, {
+  chart: {
+      backgroundColor: "#bada55"
+  },
+  plotOptions: {
+      series: {
+          cursor: "pointer",
+          events: {
+              click: function(event) {
+                  alert(this.name + " clicked\n" +
+                        "Alt: " + event.altKey + "\n" +
+                        "Control: " + event.ctrlKey + "\n" +
+                        "Shift: " + event.shiftKey + "\n");
+              }
+          }
+      }
+  }
+});
+*/new Highcharts.Chart("highcharts-56e5cafd-f5c4-4b94-a0d8-e7f76fe67d8f", options);}}})();
+</script>
+
+
 
           <div  >
             <iframe class="airtable-embed" src="https://airtable.com/embed/shrI1NXsCsCRxN6iu?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>

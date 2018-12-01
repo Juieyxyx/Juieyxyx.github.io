@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>食趣 - 適合情侶戀人的浪漫餐廳</title>
+    <title>食趣 - 適合閨蜜好友的浪漫餐廳</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -30,8 +30,8 @@
 <script>
 $(document).ready(function(){
 $("button#couplebtn").click(function() {
-    $("#highcharts-2fb8d142-2e2a-40ab-8f87-be9ac6a14972").slideToggle(300);
-    $("#highcharts-816c91ff-d59c-4f2c-968a-5f6d496a2cff").slideToggle(300);
+    $("#highcharts-700321e9-00c9-4594-ab20-5c1dd3e288cb").slideToggle(300);
+    $("#highcharts-db2b2341-aa9d-4b62-a83d-59428fcbbd36").slideToggle(300);
 });
 });
 </script>
@@ -41,24 +41,23 @@ $("button#couplebtn").click(function() {
 
   <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light scrolled awake" id="site-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html" style="color:rgba(0, 0, 0, 0.5) ">食趣</a>
+        <a class="navbar-brand" href="index.html">食趣</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
-
+          <span class="oi oi-menu"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a href="index.html" style="color:#000" class="nav-link">主頁</a></li>
-              <li class="nav-item"><a href="index.html#section-offer" style="color:#000" class="nav-link"> 食趣精選</a></li>
-                <li class="nav-item"><a href="index.html#section-menu" style="color:#f05f40" class="nav-link">個性推薦</a></li>
-            <li class="nav-item"><a href="index.html#section-about" style="color:#000" class="nav-link">美食地圖</a></li>
-
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
+            <li class="nav-item active"><a href="index.html" class="nav-link">主頁</a></li>
+              <li class="nav-item"><a href="index.html#section-offer" class="nav-link"> 食趣精選</a></li>
+                <li class="nav-item"><a href="index.html#section-menu" class="nav-link active"><< 個性推薦</a></li>
+            <li class="nav-item"><a href="index.html#section-about" class="nav-link">美食地圖</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
                 <!-- END nav -->
 
 
@@ -75,57 +74,58 @@ $("button#couplebtn").click(function() {
         <!-- charts -->
 
 
-  <div id="highcharts-2fb8d142-2e2a-40ab-8f87-be9ac6a14972" style="display:none;"></div><script>
-  (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"color":"#f48fb1","type":"spline"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"type":"spline","color":"#03a9f4"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"type":"spline","color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"Kaifong Cafe 街坊Cafe \";433;44;18\n\"AVA Restaurant Slash Bar\";148;48;18\n\"Insta Crepes\";27;6;1\n\"協奏坊西餐廳\";183;34;17\n\"Oasis Cafe & Party House\";81;10;9\n\"野玩田店\";101;29;6\n\"Brunch Club & Supper\";192;61;20\n\"Brunch Club\";100;38;8\n\"Sky726\";402;35;39\n\"The Pawn\";101;47;24\n\"HOKO Farm\";67;14;3\n\"Little Break Coffee & Kitchen\";111;46;15\n\"星幕\";25;21;9\n\"Cafe Paradise\";434;44;24\n\"Uptop Bistro and Bar\";103;17;2","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false}};/*
-  // Sample of extending options:
-  Highcharts.merge(true, options, {
-      chart: {
-          backgroundColor: "#bada55"
-      },
-      plotOptions: {
-          series: {
-              cursor: "pointer",
-              events: {
-                  click: function(event) {
-                      alert(this.name + " clicked\n" +
-                            "Alt: " + event.altKey + "\n" +
-                            "Control: " + event.ctrlKey + "\n" +
-                            "Shift: " + event.shiftKey + "\n");
+
+      <div id="highcharts-700321e9-00c9-4594-ab20-5c1dd3e288cb" style="display:none;"></div><script>
+      (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"spline","color":"#f48fb1"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"type":"spline","color":"#1e88e5"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"type":"spline","color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"Kaifong Cafe 街坊Cafe \";433;44;18\n\"AVA Restaurant Slash Bar\";148;48;18\n\"Insta Crepes\";27;6;1\n\"協奏坊西餐廳\";183;34;17\n\"Oasis Cafe & Party House\";81;10;9\n\"野玩田店\";101;29;6\n\"Brunch Club & Supper\";192;61;20\n\"Brunch Club\";100;38;8\n\"Sky726\";402;35;39\n\"The Pawn\";101;47;24\n\"HOKO Farm\";67;14;3\n\"Little Break Coffee & Kitchen\";111;46;15\n\"星幕\";25;21;9\n\"Cafe Paradise\";434;44;24\n\"Uptop Bistro and Bar\";103;17;2","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"enabled":false}};/*
+      // Sample of extending options:
+      Highcharts.merge(true, options, {
+          chart: {
+              backgroundColor: "#bada55"
+          },
+          plotOptions: {
+              series: {
+                  cursor: "pointer",
+                  events: {
+                      click: function(event) {
+                          alert(this.name + " clicked\n" +
+                                "Alt: " + event.altKey + "\n" +
+                                "Control: " + event.ctrlKey + "\n" +
+                                "Shift: " + event.shiftKey + "\n");
+                      }
                   }
               }
           }
-      }
-  });
-  */new Highcharts.Chart("highcharts-2fb8d142-2e2a-40ab-8f87-be9ac6a14972", options);}}})();
-  </script>
+      });
+      */new Highcharts.Chart("highcharts-700321e9-00c9-4594-ab20-5c1dd3e288cb", options);}}})();
+      </script>
 
 
 
 
-  <div id="highcharts-816c91ff-d59c-4f2c-968a-5f6d496a2cff" style="display:none;"></div><script>
-  (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"color":"#f48fb1","type":"column"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"Kaifong Cafe 街坊Cafe \";27127\n\"AVA Restaurant Slash Bar\";19569\n\"Insta Crepes\";4152\n\"協奏坊西餐廳\";19651\n\"Oasis Cafe & Party House\";6264\n\"野玩田店\";12012\n\"Brunch Club & Supper\";26541\n\"Brunch Club\";13206\n\"Sky726\";40821\n\"The Pawn\";9897\n\"HOKO Farm\";2658\n\"Little Break Coffee & Kitchen\";10170\n\"星幕\";6329\n\"Cafe Paradise\";26650\n\"Uptop Bistro and Bar\";11500","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false}};/*
-  // Sample of extending options:
-  Highcharts.merge(true, options, {
-      chart: {
-          backgroundColor: "#bada55"
-      },
-      plotOptions: {
-          series: {
-              cursor: "pointer",
-              events: {
-                  click: function(event) {
-                      alert(this.name + " clicked\n" +
-                            "Alt: " + event.altKey + "\n" +
-                            "Control: " + event.ctrlKey + "\n" +
-                            "Shift: " + event.shiftKey + "\n");
-                  }
-              }
-          }
-      }
-  });
-  */new Highcharts.Chart("highcharts-816c91ff-d59c-4f2c-968a-5f6d496a2cff", options);}}})();
-  </script>
 
+<div id="highcharts-db2b2341-aa9d-4b62-a83d-59428fcbbd36" style="display:none;"></div><script>
+(function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"column","color":"#f48fb1"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"Kaifong Cafe 街坊Cafe \";27127\n\"AVA Restaurant Slash Bar\";19569\n\"Insta Crepes\";4152\n\"協奏坊西餐廳\";19651\n\"Oasis Cafe & Party House\";6264\n\"野玩田店\";12012\n\"Brunch Club & Supper\";26541\n\"Brunch Club\";13206\n\"Sky726\";40821\n\"The Pawn\";9897\n\"HOKO Farm\";2658\n\"Little Break Coffee & Kitchen\";10170\n\"星幕\";6329\n\"Cafe Paradise\";26650\n\"Uptop Bistro and Bar\";11500","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"text":"","enabled":false}};/*
+// Sample of extending options:
+Highcharts.merge(true, options, {
+    chart: {
+        backgroundColor: "#bada55"
+    },
+    plotOptions: {
+        series: {
+            cursor: "pointer",
+            events: {
+                click: function(event) {
+                    alert(this.name + " clicked\n" +
+                          "Alt: " + event.altKey + "\n" +
+                          "Control: " + event.ctrlKey + "\n" +
+                          "Shift: " + event.shiftKey + "\n");
+                }
+            }
+        }
+    }
+});
+*/new Highcharts.Chart("highcharts-db2b2341-aa9d-4b62-a83d-59428fcbbd36", options);}}})();
+</script>
 
 
 
