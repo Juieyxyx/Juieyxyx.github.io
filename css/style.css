@@ -14,13 +14,14 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #FDA403;
+  color: #f05f40;
 }
 
 a:hover {
   text-decoration: none;
-  color: #FDA403;
+  color: #FFB10C;
 }
+
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
@@ -297,8 +298,9 @@ h1, h2, h3, h4, h5,
 }
 
 .menu-item img {
-  width: 100px;
-  border-radius: 50%;
+  width: 300px;
+  height:207px;
+  border-radius: 0;
 }
 
 .menu-item .menu-price {

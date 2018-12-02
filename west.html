@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>食趣 - 適合情侶戀人的浪漫餐廳</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+      <script src="jquery.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+
+
+    <!-- Script to toggle the airtable -->
+<script>
+$(document).ready(function(){
+$("button#couplebtn").click(function() {
+    $("#highcharts-bef3e0a3-c00c-4e80-bc17-d02ae5a96fd2").slideToggle(300);
+    $("#highcharts-65464aaa-2b20-497e-8cde-eb704d4402d8").slideToggle(300);
+});
+});
+</script>
+
+  </head>
+
+
+  <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light scrolled awake" id="site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">食趣</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">主頁</a></li>
+              <li class="nav-item"><a href="index.html#section-offer" class="nav-link"> 食趣精選</a></li>
+                <li class="nav-item"><a href="index.html#section-menu" class="nav-link active"><< 個性推薦</a></li>
+            <li class="nav-item"><a href="index.html#section-about" class="nav-link">美食地圖</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+                <!-- END nav -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="site-section" id="section-menu">
+        <div style="text-align:center;margin-bottom: 27px;">
+          <h2 >適合情侶戀人的浪漫餐廳</h2>
+          <div style="text-align:center;padding:10px;" > <button type="button"  class="btn btn-primary " id="couplebtn" >  對比餐廳</button> </div>
+        </div>
+
+        <!-- 對比評分和好評 -->
+
+
+
+
+
+      <div id="highcharts-bef3e0a3-c00c-4e80-bc17-d02ae5a96fd2"></div><script>
+      (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"spline","color":"#f48fb1"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"type":"spline","color":"#039be5"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"type":"spline","color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"Good Desserts 菓甜品\";99;1;1\n\"Milu Thai มิลู่ไทย\";137;3;0\n\"Steakhouse@oysterian 平民扒房@友蠔食\";43;1;1\n\"La Postre\";29;6;0\n\"彌敦左岸 Nathan Left\";440;14;2\n\"The Stadium\";346;49;17\n\"Channel 3 Tapas Bar & Restaurant\";350;16;12\n\"Cosmos Restaurant & Bar\";262;9;17\n\"Playa de Papagayo\";249;23;10\n\"Shake Shack\";152;96;14\n\"The Live House\";225;61;44\n\"Moreish & Malt\";181;33;4\n\"Noc Noc\";162;12;0\n\"Y Show Tasty\";134;6;1\n\"風車 Windmill Restaurant & Bar\";163;10;2\n\"CHEF STAGE de Eddy Chu\";669;20;19\n\"Sky726\";402;35;39\n\"Bistronomique\";212;8;4\n\"Promenade 西餐廳 Promenade Restaurant\";247;80;57\n\"AVA Restaurant Slash Bar\";148;48;18\n\"Harlan's\";154;60;30\n\"Mango Tree\";144;53;16\n\"Morton's of Chicago\";134;25;4\n\"泰道 Thai Dao\";95;6;1\n\"港畔餐廳 Harbourside\";230;77;52\n\"Ambrosia Oyster Bar & Grill\";136;22;17\n\"宜家家居餐廳及咖啡室 IKEA Café\";351;142;22\n\"Jamie's Italian\";173;104;89\n\"聆渢咖啡廳 Cafe Lagoon\";191;63;30\n\"柏景餐廳 Café on the PARK\";313;117;66\n\"大樹先生的家 Mr. Tree\";47;16;10\n\"阿甘蝦餐廳 Bubba Gump Shrimp Co.\";179;56;16\n\"Ruby Tuesday\";98;45;13\n\"紅橋 Rosa Bridge Restaurant\";128;5;2\n\"The Flying Pan\";19;20;3\n\"雅苑座 The Greenery\";522;127;80\n\"Spark Bar & Restaurant\";187;13;4\n\"Home Bar & Restaurant\";238;13;6\n\"孖啡 Double Cafe\";342;45;16\n\"To-Gather Cafe\";131;6;6\n\"Nardo's Cafe\";150;8;6\n\"Plato Cafe & Bistro\";447;38;19\n\"第三站 Station 3 Cafe\";304;28;40\n\"Pom's Kitchen & Deli\";277;40;23\n\"Oasis Cafe & Party House\";81;10;9\n\"MGB by Manhattan Grill & Bar\";377;46;47\n\"泰燒遙 Thai on 5 Seafood Grill and Bar\";353;27;8\n\"Hit the Road\";92;22;5\n\"凡高廚房 Van Gogh Kitchen\";404;21;21\n\"AVA Restaurant Slash Bar\";148;48;18\n\"Insta Crepes\";27;6;1\n\"協奏坊西餐廳\";183;34;17\n\"Oasis Cafe & Party House\";81;10;9\n\"野玩田店\";101;29;6\n\"Brunch Club & Supper\";192;61;20\n\"Brunch Club\";100;38;8\n\"Sky726\";402;35;39\n\"The Pawn\";101;47;24\n\"HOKO Farm\";67;14;3\n\"Little Break Coffee & Kitchen\";111;46;15\n\"星幕\";25;21;9\n\"Cafe Paradise\";434;44;24\n\"Uptop Bistro and Bar\";103;17;2\n\"小房子\";74;39;2\n\"阿來泰式地道風味\";418;24;20\n\"宜家家居美食站\";171;50;4","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"enabled":false}};/*
+      // Sample of extending options:
+      Highcharts.merge(true, options, {
+          chart: {
+              backgroundColor: "#bada55"
+          },
+          plotOptions: {
+              series: {
+                  cursor: "pointer",
+                  events: {
+                      click: function(event) {
+                          alert(this.name + " clicked\n" +
+                                "Alt: " + event.altKey + "\n" +
+                                "Control: " + event.ctrlKey + "\n" +
+                                "Shift: " + event.shiftKey + "\n");
+                      }
+                  }
+              }
+          }
+      });
+      */new Highcharts.Chart("highcharts-bef3e0a3-c00c-4e80-bc17-d02ae5a96fd2", options);}}})();
+      </script>
+
+
+
+<div id="highcharts-65464aaa-2b20-497e-8cde-eb704d4402d8" style="display:none"></div><script>
+(function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏數目","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"column","color":"#f48fb1"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏數目\"\n\"CHEF STAGE de Eddy Chu\";33077\n\"Sky726\";40780\n\"Goobne Chicken\";36041\n\"六公館 HEXA\";18979\n\"Bistronomique\";10621\n\"Promenade 西餐廳 Promenade Restaurant\";36173\n\"吞POT 雞煲火鍋.住家菜 Lazy Pot\";4242\n\"AVA Restaurant Slash Bar\";19542\n\"Harlan's\";31233\n\"Mango Tree\";14824\n\"Morton's of Chicago\";16235\n\"泰道 Thai Dao\";4449\n\"港畔餐廳 Harbourside\";11046\n\"Ambrosia Oyster Bar & Grill\";15641","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"text":"","enabled":false}};/*
+// Sample of extending options:
+Highcharts.merge(true, options, {
+    chart: {
+        backgroundColor: "#bada55"
+    },
+    plotOptions: {
+        series: {
+            cursor: "pointer",
+            events: {
+                click: function(event) {
+                    alert(this.name + " clicked\n" +
+                          "Alt: " + event.altKey + "\n" +
+                          "Control: " + event.ctrlKey + "\n" +
+                          "Shift: " + event.shiftKey + "\n");
+                }
+            }
+        }
+    }
+});
+*/new Highcharts.Chart("highcharts-65464aaa-2b20-497e-8cde-eb704d4402d8", options);}}})();
+</script>
+
+
+
+
+
+
+
+
+          <div  >
+             <iframe class="coupletable"
+                   src="https://airtable.com/embed/shrMLVTfx4m4Sd1tS?backgroundColor=red&viewControls=on"
+                    frameborder="0" onmousewheel="" width="100%" height="533"
+                    style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+              </body>
+              </html>
