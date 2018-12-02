@@ -492,7 +492,7 @@ $('#roll_up_map').on('click',function(){
         <div class="row" style="height:500px;">
           <div class="col-lg-8 mx-auto text-center">
           <h2 class="site-color">— 美食地圖 —</h2> <br>
-            <h6 class="site-sub-title"  style=" margin-top:-27px; color: #000;" >查看食趣推薦的餐廳集中分佈的熱門地區</h6>
+            <h6   style=" margin-top:-27px; color: #000;" >查看「食趣推薦」餐廳集中分佈的<strong>熱門地區</strong></h6>
 <br>   <br><button type="button" class="btn btn-secondary btn-lg"
 id='roll_up_map' onclick="show_districts();" style="position:relative; top:-50px;background:#f05f40;border-color:#f05f40;color:#FFFFFF;">點擊查看</button><br>
 
@@ -509,10 +509,12 @@ id='roll_up_map' onclick="show_districts();" style="position:relative; top:-50px
           var mapboxTiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: 'Map data &copy; <a href="https://openstreetmap.org">OpenStreetMap</a>', maxZoom: 18,})
           var map = L.map('map')
                 .addLayer(mapboxTiles)
-                .setView([22.280556, 114.165278], 13);
+                .setView([22.293889, 114.171111], 12);
           var items = [];
-          var airtable_read_endpoint = "https://api.airtable.com/v0/appmq0Ec3FFKpn5pM/location_catogory?api_key=keyIvnCG4lnYkaCAs&view=Grid%20view"
+          var airtable_read_endpoint =
 
+
+"https://api.airtable.com/v0/appRqHoNzbFcRmwuD/%E5%9C%B0%E5%9C%96?api_key=keyIvnCG4lnYkaCAs&view=Grid%20view"
 
           // create custom icon
               var Icon = L.icon({
@@ -530,6 +532,8 @@ id='roll_up_map' onclick="show_districts();" style="position:relative; top:-50px
                          items["image_url"] = value.fields.image_url;
                          items["latitude"] = value.fields.latitude;
                          items["longitude"] = value.fields.longitude;
+                          items["number"] = value.fields.number;
+                           items["info"] = value.fields.info;
                          data.push(items);
                          console.log(items);
                   }); // end .each
@@ -541,7 +545,8 @@ id='roll_up_map' onclick="show_districts();" style="position:relative; top:-50px
         for (var i in data) {
             var latlng = L.latLng({ lat: data[i].latitude, lng: data[i].longitude });
             L.marker( latlng, {icon: Icon})
-                .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "80px"><br>'+data[i].location + '</a>' )
+                .bindPopup( '<a href="' + data[i].url + '" target="_blank">' + '<img src="' + data[i].image_url+'" width = "100px"><br>'+data[i].location + data[i].number +data[i].info
+                 + '</a>' )
                 .addTo(map);
         }
       }
