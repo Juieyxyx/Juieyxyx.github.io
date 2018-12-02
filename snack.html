@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>食趣 - 輕鬆小食</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+      <script src="jquery.min.js"></script>
+  <script src="bootstrap.bundle.min.js"></script>
+
+
+    <!-- Script to toggle the airtable -->
+<script>
+$(document).ready(function(){
+$("button#couplebtn").click(function() {
+    $("#highcharts-8ef34434-06c1-4f99-86cd-ab8ac67f0057").slideToggle(300);
+    $("#highcharts-e6923cc8-0f7b-4380-92bf-d035e476aa9f").slideToggle(300);
+});
+});
+</script>
+
+  </head>
+
+
+  <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light scrolled awake" id="site-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">食趣</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">主頁</a></li>
+              <li class="nav-item"><a href="index.html#section-offer" class="nav-link"> 食趣精選</a></li>
+                <li class="nav-item"><a href="index.html#section-menu" class="nav-link active"><< 個性推薦</a></li>
+            <li class="nav-item"><a href="index.html#section-about" class="nav-link">美食地圖</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+                <!-- END nav -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="site-section" id="section-menu">
+        <div style="text-align:center;margin-bottom: 27px;">
+          <h2 >輕鬆小食</h2>
+          <div style="text-align:center;padding:10px;" > <button type="button"  class="btn btn-primary " id="couplebtn" >  對比餐廳</button> </div>
+        </div>
+
+        <!-- 對比評分和好評 -->
+
+
+
+
+
+        <div id="highcharts-8ef34434-06c1-4f99-86cd-ab8ac67f0057" style="display:none"></div><script>
+        (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"口碑參數對比"},"subtitle":{"text":"比較餐廳的好評、中評和差評數目"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"好評","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"spline","color":"#f48fb1"},{"name":"中評","turboThreshold":0,"_colorIndex":1,"_symbolIndex":1,"marker":{},"type":"spline","color":"#039be5"},{"name":"差評","turboThreshold":0,"_colorIndex":2,"_symbolIndex":2,"marker":{},"type":"spline","color":"#37474f"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"好評\";\"中評\";\"差評\"\n\"宜家家居餐廳及咖啡室 IKEA Café\";351;142;22\n\"十八座狗仔粉\";85;31;20\n\"上海香港麵家 Shanghai Hong Kong Noodle Shop\";73;48;32\n\"德發粥品專家\";52;31;16\n\"標叔叔小食店\";25;11;2\n\"宜家家居美食站\";171;50;4\n\"樓下冰室\";292;61;8\n\"滿粥\";20;4;0\n\"星座冰室\";286;147;56","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"enabled":false}};/*
+        // Sample of extending options:
+        Highcharts.merge(true, options, {
+            chart: {
+                backgroundColor: "#bada55"
+            },
+            plotOptions: {
+                series: {
+                    cursor: "pointer",
+                    events: {
+                        click: function(event) {
+                            alert(this.name + " clicked\n" +
+                                  "Alt: " + event.altKey + "\n" +
+                                  "Control: " + event.ctrlKey + "\n" +
+                                  "Shift: " + event.shiftKey + "\n");
+                        }
+                    }
+                }
+            }
+        });
+        */new Highcharts.Chart("highcharts-8ef34434-06c1-4f99-86cd-ab8ac67f0057", options);}}})();
+        </script>
+
+
+        <div id="highcharts-e6923cc8-0f7b-4380-92bf-d035e476aa9f" style="display:none"></div><script>
+        (function(){ var files = ["https://code.highcharts.com/stock/highstock.js","https://code.highcharts.com/highcharts-more.js","https://code.highcharts.com/highcharts-3d.js","https://code.highcharts.com/modules/data.js","https://code.highcharts.com/modules/exporting.js","https://code.highcharts.com/modules/funnel.js","https://code.highcharts.com/modules/annotations.js","https://code.highcharts.com/modules/solid-gauge.js"],loaded = 0; if (typeof window["HighchartsEditor"] === "undefined") {window.HighchartsEditor = {ondone: [cl],hasWrapped: false,hasLoaded: false};include(files[0]);} else {if (window.HighchartsEditor.hasLoaded) {cl();} else {window.HighchartsEditor.ondone.push(cl);}}function isScriptAlreadyIncluded(src){var scripts = document.getElementsByTagName("script");for (var i = 0; i < scripts.length; i++) {if (scripts[i].hasAttribute("src")) {if ((scripts[i].getAttribute("src") || "").indexOf(src) >= 0 || (scripts[i].getAttribute("src") === "http://code.highcharts.com/highcharts.js" && src === "https://code.highcharts.com/stock/highstock.js")) {return true;}}}return false;}function check() {if (loaded === files.length) {for (var i = 0; i < window.HighchartsEditor.ondone.length; i++) {try {window.HighchartsEditor.ondone[i]();} catch(e) {console.error(e);}}window.HighchartsEditor.hasLoaded = true;}}function include(script) {function next() {++loaded;if (loaded < files.length) {include(files[loaded]);}check();}if (isScriptAlreadyIncluded(script)) {return next();}var sc=document.createElement("script");sc.src = script;sc.type="text/javascript";sc.onload=function() { next(); };document.head.appendChild(sc);}function each(a, fn){if (typeof a.forEach !== "undefined"){a.forEach(fn);}else{for (var i = 0; i < a.length; i++){if (fn) {fn(a[i]);}}}}var inc = {},incl=[]; each(document.querySelectorAll("script"), function(t) {inc[t.src.substr(0, t.src.indexOf("?"))] = 1; }); function cl() {if(typeof window["Highcharts"] !== "undefined"){var options={"title":{"text":"餐廳被收藏的次數對比"},"subtitle":{"text":"被收藏越多次的餐廳吸引力可能越大"},"exporting":{},"yAxis":[{"title":{"text":""}}],"series":[{"name":"收藏","turboThreshold":0,"_colorIndex":0,"_symbolIndex":0,"marker":{},"type":"column","color":"#f48fb1"}],"plotOptions":{"series":{"animation":false}},"data":{"csv":"\"店名\";\"收藏\"\n\"宜家家居餐廳及咖啡室 IKEA Café\";2283\n\"十八座狗仔粉\";8346\n\"上海香港麵家 Shanghai Hong Kong Noodle Shop\";1937\n\"德發粥品專家\";1236\n\"標叔叔小食店\";677\n\"宜家家居美食站\";1130\n\"樓下冰室\";8346\n\"滿粥\";1007\n\"星座冰室\";14537","googleSpreadsheetKey":false,"googleSpreadsheetWorksheet":false},"credits":{"enabled":false}};/*
+        // Sample of extending options:
+        Highcharts.merge(true, options, {
+            chart: {
+                backgroundColor: "#bada55"
+            },
+            plotOptions: {
+                series: {
+                    cursor: "pointer",
+                    events: {
+                        click: function(event) {
+                            alert(this.name + " clicked\n" +
+                                  "Alt: " + event.altKey + "\n" +
+                                  "Control: " + event.ctrlKey + "\n" +
+                                  "Shift: " + event.shiftKey + "\n");
+                        }
+                    }
+                }
+            }
+        });
+        */new Highcharts.Chart("highcharts-e6923cc8-0f7b-4380-92bf-d035e476aa9f", options);}}})();
+        </script>
+
+
+
+
+
+
+
+
+          <div  >
+            <iframe class="airtable-embed" src="https://airtable.com/embed/shrS5W0CyIfpzGKRX?backgroundColor=red&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+          </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+              </body>
+              </html>
