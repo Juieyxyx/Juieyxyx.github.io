@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>食趣 - 铜锣湾</title>
+    <title>食趣 - 尖沙咀</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -21,9 +21,21 @@
 
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
 
+    <!-- Script to toggle the airtable -->
+
+    <script src="jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$("button#tsimtable").click(function() {
+    $(".airtable-embed-tsim").slideToggle(300);
+});
+});
+</script>
+  </head>
+
+  <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light scrolled awake" id="site-navbar">
       <div class="container">
@@ -31,12 +43,14 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span>
         </button>
+
+
         <div class="collapse navbar-collapse" id="site-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active"><a href="index.html" class="nav-link">主頁</a></li>
               <li class="nav-item"><a href="index.html#section-offer" class="nav-link"> 食趣精選</a></li>
-                <li class="nav-item"><a href="index.html#section-menu" class="nav-link "> 個性推薦</a></li>
-            <li class="nav-item"><a href="index.html#section-about" class="nav-link active"><<美食地圖</a></li>
+                <li class="nav-item"><a href="index.html#section-menu" class="nav-link active"><< 個性推薦</a></li>
+            <li class="nav-item"><a href="index.html#section-about" class="nav-link">美食地圖</a></li>
           </ul>
         </div>
       </div>
@@ -50,20 +64,27 @@
         <div class="row">
           <div class="col-md-5 site-animate mb-5">
             <h4 class="site-sub-title">美食地图</h4>
-            <h2 class="site-primary-title display-4">铜锣湾</h2>
-            <p>銅鑼灣是香港最熱鬧的商業街區，這裏的人流量非常的大，廣告牌，霓虹燈，讓人想起了鄧麗君的香港之夜，走在這裏就是電影裏香港街道的感覺，這裏絕不會讓妳有孤單的感覺，即使到了深夜，地鐵線依然開著，路上旅客也有很多，總之是體驗香港必須去的地方。</p>
+            <h2 class="site-primary-title display-4">尖沙咀</h2>
+            <p>尖沙咀聚集著許多香港著名的景點，如星光大道、維多利亞港等，是遊客來港的必打卡地。它是香港最繁華的購物天堂，也有香港歷史博物館、香港科學館及香港文化中心等文化場所。此外，尖沙咀也是看夜景的好地方，維多利亞港、星光大道都是不錯的選擇。</p>
 
-            <p class="mb-4">在銅鑼灣的壹幢幢摩天大樓之間，藏著不少自營精品店和本地美食鋪。當妳在銅鑼灣從白天壹直血拼到夜晚，晚餐或者宵夜後，不妨去樓頂酒吧小酌壹杯。該區高樓和酒店眾多，且地理位置絕佳，讓妳盡享香港絢麗耀眼的城市景觀。</p>
-            <p><a href="#" class="btn btn-secondary btn-lg">Learn More About Us</a></p>
+            <p class="mb-4">尖沙咀東部四、五星級酒店林立，您可以在各酒店的中西餐廳，品嚐由世界級名廚烹調的中西佳餚和國際美食。這一帶不少坐擁海景的高級餐廳、露天咖啡廳、酒吧，也能讓您一邊愜意的飽嚐國際美食，一邊欣賞維多利亞港迷人的景色。不論是在陽光下享受咖啡邊看雜誌，還是在星光下與摯愛共進浪漫晚餐，在這裡同樣感到愜意。</p>
+   <button type="button"  class="btn btn-secondary btn-lg"  id="tsimtable">查看「食趣推薦」</button>
           </div>
           <div class="col-md-1"></div>
           <div class="col-md-6 site-animate img" data-animate-effect="fadeInRight">
-            <img src="img/causeway.png" alt="Free Template by colorlib.com" class="img-fluid">
+            <img src="img/tsim.png" alt="Free Template by colorlib.com" class="img-fluid">
           </div>
         </div>
       </div>
-    </section>
-    <!-- END section -->
+
+
+
+
+<iframe class="airtable-embed-tsim" style="display:none" src="https://airtable.com/embed/shrv5HrTTNzorhlyr?backgroundColor=cyan&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe>
+
+      </section>
+      <!-- END section -->
+
 
 
 
@@ -91,7 +112,7 @@
 
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/google-map.js"></script>
+
 
     <script src="js/main.js"></script>
 
