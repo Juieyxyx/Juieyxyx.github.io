@@ -192,14 +192,14 @@ h1, h2, h3, h4, h5,
 }
 
 .site-cover .site-heading {
-  font-size: 57px;
+  font-size: 65px;
   line-height: 1.34;
   color: #fffffb;
 }
 
 @media screen and (max-width: 768px) {
   .site-cover .site-heading {
-    font-size: 37px;
+    font-size: 60px;
     line-height: 1.3;
   }
 }
